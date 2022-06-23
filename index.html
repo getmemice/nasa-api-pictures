@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NASA API Pictures</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov"
+    />
     <!-- ZTM Favicon -->
     <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
-</head>
-<body>
-  <div class="loader hidden">
-       <img src="rocket.svg" alt="Rocket Loading Animation">
-  </div>
+  </head>
+  <body>
+    <div class="loader hidden">
+      <img src="rocket.svg" alt="Rocket Loading Animation" />
+    </div>
+    <div class="container">
+      <div class="navigation-container">
+        <span class="background"></span>
+        <span class="navigation-items" id="resultsNav">
+          <h3 class="clickable">Favorates</h3>
+          <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+          <h3 class="clickable">Load More</h3>
+        </span>
+        <span class="navigation-itmes hidden" id="favoritesNav">
+          <h3 class="clickable">Load More NASA Images</h3>
+        </span>
+      </div>
+      <div class="images-container">
+        <!-- <div class="card"> -->
+        <!--   <a href="" title="View Full Image" target="_blank"> -->
+        <!--     <img -->
+        <!--       src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" -->
+        <!--       alt="NASA Pictures of the Day" -->
+        <!--       class="card-img-top" -->
+        <!--     /> -->
+        <!--   </a> -->
+        <!--   <div class="card-body"> -->
+        <!--     <h5 class="card-title">Title of Image</h5> -->
+        <!--     <p class="clickable">Add to Favorites</p> -->
+        <!--     <p class="card-text"> -->
+        <!--       Lorem ipsum dolor sit amet consectetur, adipisicing elit. -->
+        <!--       Blanditiis placeat fugiat distinctio neque dolores asperiores, -->
+        <!--     </p> -->
+        <!--     <small class="text-muted"> -->
+        <!--       <strong>12-12-20</strong> -->
+        <!--       <span>Copy Right Info</span> -->
+        <!--     </small> -->
+        <!--   </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="save-confirmed hidden"><h1>Added!</h1></div>
     <!-- Script -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
